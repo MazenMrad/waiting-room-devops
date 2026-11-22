@@ -53,7 +53,8 @@ To deploy: `git tag v0.1.0 && git push origin v0.1.0` → workflow `Release`.
 
 ## Evidence for the soutenance
 
-- Green PR run: `<paste URL>`
-- Red PR run + first error line: `<paste URL>` / `AssertionError: 'A001' !== 'B001'`
-- Deployment run: `<paste URL>`
-- Rollback run: `<paste URL>`
+- Green PR run: <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45074973852>
+- Red PR run: <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45074576435> — first useful error: `invalid tag ... repository name must be lowercase`
+- Deployment run (`v0.1.0`): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45075725592>
+- Rollback run (back to `v0.1.0`): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45075925578>
+- Images: `ghcr.io/mazenmrad/waiting-room-devops:v0.1.0` and `:v0.2.0`

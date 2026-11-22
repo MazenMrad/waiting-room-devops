@@ -85,12 +85,12 @@ is ephemeral and shows the health check result in its log.
 4. **Rollback:** push tag `v0.2.0`, then run `Rollback` with `version: v0.1.0` → show
    `[rollback] successfully rolled back to ghcr.io/<owner>/<repo>:v0.1.0`.
 
-Pipeline runs to paste here after the demo:
+Pipeline runs (recorded on `MazenMrad/waiting-room-devops`):
 
-- Successful run: `https://github.com/<owner>/<repo>/actions/runs/<green-run-id>`
-- Failed run: `https://github.com/<owner>/<repo>/actions/runs/<red-run-id>`
-- Deployment run: `https://github.com/<owner>/<repo>/actions/runs/<release-run-id>`
-- Rollback run: `https://github.com/<owner>/<repo>/actions/runs/<rollback-run-id>`
+- Successful PR run (green): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45074973852>
+- Failed PR run (first useful error: `repository name must be lowercase`): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45074576435>
+- Deployment run (tag `v0.1.0`): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45075725592>
+- Rollback run (back to `v0.1.0`): <https://github.com/MazenMrad/waiting-room-devops/actions/runs/45075925578>
 
 ## Coverage of the grading grid
 
